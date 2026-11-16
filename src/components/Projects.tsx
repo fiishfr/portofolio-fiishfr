@@ -137,17 +137,16 @@ export default function Projects() {
         </div>
 
         {/* Projects Grid */}
-        <motion.div layout className="mt-8 grid gap-6 md:grid-cols-2">
+        <motion.div className="mt-8 grid min-w-0 gap-6 md:grid-cols-2">
           <AnimatePresence mode="popLayout">
             {filteredProjects.map((project, idx) => (
               <motion.div
                 key={project.id}
-                layout
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.98 }}
                 transition={{ duration: 0.15 }}
-                className="group flex flex-col justify-between border-2 border-black bg-white neo-shadow transition-all duration-100 hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none"
+                className="group flex min-w-0 flex-col justify-between border-2 border-black bg-white neo-shadow transition-all duration-100 hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none"
               >
                 <div>
                   {/* Browser Window Header */}
@@ -172,18 +171,18 @@ export default function Projects() {
                   {/* Live Website Preview */}
                   <div className="border-b-2 border-black bg-[#FAF9F5] p-5">
                     {project.demoUrl ? (
-                      <div className="overflow-hidden border-2 border-black bg-white neo-shadow-sm">
-                        <div className="flex items-center justify-between border-b border-black bg-zinc-100 px-2.5 py-1.5 font-mono text-[10px]">
+                      <div className="min-w-0 overflow-hidden border-2 border-black bg-white neo-shadow-sm">
+                        <div className="flex min-w-0 items-center justify-between border-b border-black bg-zinc-100 px-2.5 py-1.5 font-mono text-[10px]">
                           <span className="truncate text-black/70">{project.demoUrl.replace("https://", "")}</span>
                           <span className="ml-2 shrink-0 font-bold text-emerald-700">LIVE</span>
                         </div>
-                        <div className="h-52 overflow-hidden bg-white md:h-72">
+                        <div className="relative h-[186px] min-w-0 overflow-hidden bg-white md:h-[195px] lg:h-[280px]">
                           <iframe
                             src={project.demoUrl}
                             title={`Preview ${project.title}`}
                             loading="lazy"
                             scrolling="no"
-                            className="pointer-events-none h-[720px] w-[1280px] origin-top-left scale-[0.27] bg-white md:scale-[0.38]"
+                            className="pointer-events-none absolute left-0 top-0 h-[720px] w-[1280px] origin-top-left scale-[0.258] bg-white md:scale-[0.27] lg:scale-[0.387]"
                           />
                         </div>
                       </div>

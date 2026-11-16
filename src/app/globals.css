@@ -15,13 +15,18 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
   background-color: #FAF9F5;
   color: #121212;
   font-family: var(--font-sans);
-  overflow-x: clip;
+  overflow-x: hidden;
+}
+
+.marquee-viewport {
+  contain: paint;
 }
 
 ::selection {

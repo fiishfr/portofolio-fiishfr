@@ -26,7 +26,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative pt-16 pb-12 sm:pt-24 sm:pb-16">
+    <section className="relative pt-24 pb-12 sm:pt-32 sm:pb-16">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         {/* Prominent Student & Location Tag */}
         <div className="flex flex-wrap items-center gap-2.5">
@@ -305,7 +305,7 @@ export default function Hero() {
       </div>
 
       {/* Clean Single Ticker Tape with Code & Visual Elements */}
-      <div className="mt-12 overflow-hidden border-y-2 border-black bg-yellow-300 py-2.5 select-none">
+      <div className="marquee-viewport mt-12 overflow-hidden border-y-2 border-black bg-yellow-300 py-2.5 select-none">
         <div className="animate-marquee font-mono text-xs sm:text-sm font-black uppercase tracking-wider text-black">
           {[0, 1].map((key) => (
             <div key={key} className="flex shrink-0 items-center gap-6 pr-6">
