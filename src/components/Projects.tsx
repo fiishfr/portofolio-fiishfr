@@ -158,7 +158,7 @@ export default function Projects() {
                     </div>
 
                     <span className="font-mono text-[11px] font-bold text-black/70">
-                      demo-{idx + 1}.upnvy.ac.id
+                      karya-{idx + 1}.fiishfr.my.id
                     </span>
 
                     <span
@@ -273,7 +273,7 @@ export default function Projects() {
                 {/* Modal Title Bar */}
                 <div className="sticky top-0 z-10 flex items-center justify-between border-b-2 border-black bg-yellow-300 px-4 py-2.5">
                   <span className="font-mono text-xs font-black uppercase text-black">
-                    RINCIAN_PROYEK.TXT
+                    DETAIL KARYA
                   </span>
 
                   <button
