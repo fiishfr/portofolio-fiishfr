@@ -223,24 +223,6 @@ export default function Hero() {
                           <span className="font-bold">Yogyakarta, ID</span>
                         </div>
                       </div>
-
-                      <div className="mt-3.5 space-y-1.5">
-                        <p className="text-black/60">{"// Stack Andalan:"}</p>
-                        <div className="flex flex-wrap gap-1.5">
-                          <span className="border border-black bg-yellow-100 px-2 py-0.5 font-bold">
-                            Next.js 16
-                          </span>
-                          <span className="border border-black bg-yellow-100 px-2 py-0.5 font-bold">
-                            React 19
-                          </span>
-                          <span className="border border-black bg-yellow-100 px-2 py-0.5 font-bold">
-                            TypeScript
-                          </span>
-                          <span className="border border-black bg-yellow-100 px-2 py-0.5 font-bold">
-                            Tailwind v4
-                          </span>
-                        </div>
-                      </div>
                     </div>
                   ) : (
                     <div>
@@ -253,32 +235,10 @@ export default function Hero() {
                           <span className="text-black/60">Genre:</span>
                           <span className="font-bold">Street, Arsitektur, Sinematik</span>
                         </div>
-                        <div className="flex justify-between">
-                          <span className="text-black/60">Kamera Utama:</span>
-                          <span className="font-bold">Sony Alpha Series</span>
-                        </div>
-                        <div className="flex justify-between">
-                          <span className="text-black/60">Lensa Favorit:</span>
-                          <span className="font-bold">35mm F1.8 Prime Lens</span>
-                        </div>
                       </div>
 
                       <div className="mt-3.5 space-y-1.5">
                         <p className="text-black/60">{"// Spesialisasi Visual:"}</p>
-                        <div className="flex flex-wrap gap-1.5">
-                          <span className="border border-black bg-pink-100 px-2 py-0.5 font-bold">
-                            4K 24FPS Cinelog
-                          </span>
-                          <span className="border border-black bg-pink-100 px-2 py-0.5 font-bold">
-                            Street Candid
-                          </span>
-                          <span className="border border-black bg-pink-100 px-2 py-0.5 font-bold">
-                            Color Grading
-                          </span>
-                          <span className="border border-black bg-pink-100 px-2 py-0.5 font-bold">
-                            DaVinci Resolve
-                          </span>
-                        </div>
                       </div>
                     </div>
                   )}
@@ -309,19 +269,19 @@ export default function Hero() {
         <div className="animate-marquee font-mono text-xs sm:text-sm font-black uppercase tracking-wider text-black">
           {[0, 1].map((key) => (
             <div key={key} className="flex shrink-0 items-center gap-6 pr-6">
-              <span>★ UPN &quot;VETERAN&quot; YOGYAKARTA</span>
+              <span> UPN &quot;VETERAN&quot; YOGYAKARTA</span>
               <span>&bull;</span>
-              <span>S1 TEKNIK INFORMATIKA</span>
+              <span> S1 TEKNIK INFORMATIKA </span>
               <span>&bull;</span>
-              <span>WEB DEVELOPMENT</span>
+              <span> INFORMATICS </span>
               <span>&bull;</span>
-              <span>FOTOGRAFI JALANAN</span>
+              <span> FOTOGRAFI </span>
               <span>&bull;</span>
-              <span>VIDEOGRAFI 4K SINEMATIK</span>
+              <span> VIDEOGRAFI </span>
               <span>&bull;</span>
-              <span>NEXT.JS &bull; REACT &bull; TYPESCRIPT</span>
+              <span> C++ &bull; NEXT JS &bull; TYPESCRIPT </span>
               <span>&bull;</span>
-              <span>TERBUKA UNTUK KOLABORASI &bull; 2026</span>
+              <span> TERBUKA UNTUK KOLABORASI &bull; 2026 </span>
               <span>&bull;</span>
             </div>
           ))}

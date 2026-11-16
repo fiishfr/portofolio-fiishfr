@@ -4,7 +4,12 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Muhammad Luthfi Shofari | Mahasiswa Informatika UPN \"Veteran\" Yogyakarta",
   description:
-    "Portofolio Neobrutalisme Muhammad Luthfi Shofari — Mahasiswa Informatika UPN \"Veteran\" Yogyakarta. Web Development, Rekayasa Perangkat Lunak, dan Desain UI/UX.",
+    "Portofolio Muhammad Luthfi Shofari — Mahasiswa Informatika UPN \"Veteran\" Yogyakarta. Web Development, Rekayasa Perangkat Lunak, Desain UI/UX, dan Fotografi/Videografi.",
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export const viewport: Viewport = {

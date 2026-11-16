@@ -182,7 +182,7 @@ export default function Projects() {
                             title={`Preview ${project.title}`}
                             loading="lazy"
                             scrolling="no"
-                            className="pointer-events-none absolute left-0 top-0 h-[720px] w-[1280px] origin-top-left scale-[0.258] bg-white md:scale-[0.27] lg:scale-[0.387]"
+                            className="pointer-events-none absolute inset-0 h-full w-full bg-white md:left-0 md:top-0 md:h-[720px] md:w-[1280px] md:origin-top-left md:scale-[0.27] lg:scale-[0.387]"
                           />
                         </div>
                       </div>
