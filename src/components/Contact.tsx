@@ -355,7 +355,7 @@ export default function Contact() {
               Mahasiswa S1 Informatika — Universitas Pembangunan Nasional &quot;Veteran&quot; Yogyakarta
             </p>
             <p className="mt-1 font-mono text-[11px] text-white/40">
-              © 2026. Didesain dengan estetika Neobrutalisme bersih &bull; Next.js 16 &amp; Tailwind CSS v4.
+              © 2026. All rights reserved.
             </p>
           </div>
 
