@@ -110,7 +110,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="kontak" className="pt-16 sm:pt-24 border-t-2 border-black bg-white">
+    <section id="kontak" className="overflow-x-clip border-t-2 border-black bg-white pt-16 sm:pt-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <SectionHeading
           tag="// 06. MARI BERKOLABORASI"
@@ -123,7 +123,7 @@ export default function Contact() {
         {/* Main Contact Grid */}
         <div className="grid gap-8 lg:grid-cols-12 lg:gap-12">
           {/* Left Column: Direct Info & Social Link Cards */}
-          <div className="space-y-5 lg:col-span-5">
+          <div className="min-w-0 space-y-5 lg:col-span-5">
             <div>
               <h3 className="text-2xl font-black text-black sm:text-3xl">
                 Ayo Bikin Sesuatu Bersama!
@@ -180,21 +180,21 @@ export default function Contact() {
                       rel="noreferrer"
                       className="group flex items-center justify-between border-2 border-black bg-[#FAF9F5] p-3 neo-shadow-sm transition-all duration-100 hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none hover:bg-yellow-50"
                     >
-                      <div className="flex items-center gap-2.5">
+                      <div className="flex min-w-0 items-center gap-2.5">
                         <div className="grid size-8 place-items-center border border-black bg-white neo-shadow-sm">
                           <Icon className="size-4 text-black" />
                         </div>
-                        <div>
+                        <div className="min-w-0">
                           <p className="font-display text-sm font-black text-black mt-1">
                             {s.name}
                           </p>
-                          <p className="font-mono text-[11px] text-black/60">
+                          <p className="break-words font-mono text-[11px] text-black/60">
                             {s.handle}
                           </p>
                         </div>
                       </div>
 
-                      <span className="border border-black bg-white px-2 py-0.5 font-mono text-[11px] font-bold text-black group-hover:bg-black group-hover:text-yellow-300 transition-colors">
+                      <span className="shrink-0 border border-black bg-white px-2 py-0.5 font-mono text-[11px] font-bold text-black transition-colors group-hover:bg-black group-hover:text-yellow-300">
                         Kunjungi ↗
                       </span>
                     </a>
@@ -205,27 +205,27 @@ export default function Contact() {
 
             {/* University & Location Stamp */}
             <div className="border-2 border-black bg-[#FAF9F5] p-3.5 neo-shadow-sm font-mono text-xs space-y-1">
-              <p className="flex items-center gap-1.5 font-bold text-black">
+              <p className="flex min-w-0 items-start gap-1.5 font-bold text-black">
                 <GraduationCap className="size-3.5" />
-                <span>Teknik Informatika — UPN &quot;Veteran&quot; Yogyakarta</span>
+                <span className="min-w-0 break-words">Teknik Informatika — UPN &quot;Veteran&quot; Yogyakarta</span>
               </p>
-              <p className="flex items-center gap-1.5 text-black/70 font-medium">
+              <p className="flex min-w-0 items-start gap-1.5 font-medium text-black/70">
                 <MapPin className="size-3.5 text-red-600" />
-                <span>Condongcatur, Sleman, D.I. Yogyakarta</span>
+                <span className="min-w-0 break-words">Condongcatur, Sleman, D.I. Yogyakarta</span>
               </p>
             </div>
           </div>
 
           {/* Right Column: Clean Brutalist Feedback Form */}
-          <div className="lg:col-span-7">
+          <div className="min-w-0 lg:col-span-7">
             <div className="border-2 border-black bg-[#FAF9F5] p-5 sm:p-7 neo-shadow">
               {/* Form Window Top Bar */}
-              <div className="flex items-center justify-between border-b-2 border-black pb-3 mb-5">
+              <div className="flex flex-wrap items-center justify-between gap-2 border-b-2 border-black pb-3 mb-5">
                 <div className="flex items-center gap-2 font-mono text-xs font-black uppercase text-black">
                   <MessageSquare className="size-3.5" />
                   <span>KIRIM_PESAN.FORM</span>
                 </div>
-                <span className="border border-black bg-yellow-300 px-1.5 py-0.2 font-mono text-[10px] font-bold">
+                <span className="shrink-0 border border-black bg-yellow-300 px-1.5 py-0.2 font-mono text-[10px] font-bold">
                   DIRECT FORM
                 </span>
               </div>
@@ -276,7 +276,7 @@ export default function Contact() {
                   <label className="block font-mono text-xs font-black uppercase text-black mb-1.5">
                     Kategori Keperluan *
                   </label>
-                  <div className="grid grid-cols-2 gap-1.5">
+                  <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-2">
                     {categoryOptions.map((cat) => {
                       const isSelected = selectedCategory === cat;
                       return (
@@ -284,7 +284,7 @@ export default function Contact() {
                           key={cat}
                           type="button"
                           onClick={() => setSelectedCategory(cat)}
-                          className={`border border-black p-2 text-left font-mono text-[11px] font-bold transition-all ${
+                          className={`min-w-0 border border-black p-2 text-left font-mono text-[11px] font-bold transition-all ${
                             isSelected
                               ? "bg-yellow-300 text-black neo-shadow-sm font-black"
                               : "bg-white text-black hover:bg-zinc-100"
