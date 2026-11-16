@@ -96,7 +96,7 @@ export default function Contact() {
 
     const subject = encodeURIComponent(`[Portofolio] ${selectedCategory} — dari ${nama}`);
     const body = encodeURIComponent(
-      `Halo Luthfi,\n\nNama: ${nama}\nEmail: ${email}\nKategori: ${selectedCategory}\n\nPesan:\n${pesan}\n\n— Dikirim via Form Portofolio Neobrutalism`
+      `Halo Luthfi,\n\nNama: ${nama}\nEmail: ${email}\nKategori: ${selectedCategory}\n\nPesan:\n${pesan}\n\n— Dikirim via Form Portofolio`
     );
 
     window.location.href = `mailto:${EMAIL_ADDRESS}?subject=${subject}&body=${body}`;
@@ -211,7 +211,7 @@ export default function Contact() {
               </p>
               <p className="flex min-w-0 items-start gap-1.5 font-medium text-black/70">
                 <MapPin className="size-3.5 text-red-600" />
-                <span className="min-w-0 break-words">Condongcatur, Sleman, D.I. Yogyakarta</span>
+                <span className="min-w-0 break-words">Condongcatur, Sleman, D.I.Yogyakarta</span>
               </p>
             </div>
           </div>
@@ -240,7 +240,7 @@ export default function Contact() {
                     id="nama"
                     name="nama"
                     type="text"
-                    placeholder="Contoh: Budi Pratama"
+                    placeholder="Contoh: Asep Saepudin"
                     className="w-full border-2 border-black bg-white px-3.5 py-2.5 font-sans text-xs sm:text-sm font-medium text-black placeholder:text-black/40 focus:bg-yellow-50 focus:outline-none neo-shadow-sm"
                   />
                   {errors.nama && (
@@ -260,7 +260,7 @@ export default function Contact() {
                     id="email"
                     name="email"
                     type="email"
-                    placeholder="nama@perusahaan.com"
+                    placeholder="nama@gmail.com"
                     className="w-full border-2 border-black bg-white px-3.5 py-2.5 font-sans text-xs sm:text-sm font-medium text-black placeholder:text-black/40 focus:bg-yellow-50 focus:outline-none neo-shadow-sm"
                   />
                   {errors.email && (
