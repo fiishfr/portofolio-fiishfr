@@ -223,7 +223,7 @@ export default function Contact() {
               <div className="flex flex-wrap items-center justify-between gap-2 border-b-2 border-black pb-3 mb-5">
                 <div className="flex items-center gap-2 font-mono text-xs font-black uppercase text-black">
                   <MessageSquare className="size-3.5" />
-                  <span>KIRIM_PESAN.FORM</span>
+                  <span>KIRIM PESAN</span>
                 </div>
                 <span className="shrink-0 border border-black bg-yellow-300 px-1.5 py-0.2 font-mono text-[10px] font-bold">
                   DIRECT FORM
