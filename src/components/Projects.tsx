@@ -94,7 +94,6 @@ export default function Projects() {
     return p.category === filter;
   });
 
-  // Close modal on Escape
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") setActiveModalProject(null);
@@ -114,7 +113,6 @@ export default function Projects() {
           sideBadge="SHOWCASE"
         />
 
-        {/* Filter Tabs */}
         <div className="flex flex-wrap items-center gap-2" role="tablist">
           {filterCategories.map((item) => {
             const isSelected = filter === item;
